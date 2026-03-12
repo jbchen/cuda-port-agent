@@ -1,2 +1,0 @@
-pmc: TCC_HIT_sum TCC_MISS_sum
-pmc: FETCH_SIZE WRITE_SIZE
