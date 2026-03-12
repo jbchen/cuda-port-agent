@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jchen/cuda-port-agent/hip/bodysystem.h
+hip/hip_runtime.h
+-
+algorithm
+-
+
+/home/jchen/cuda-port-agent/hip/bodysystemcuda.hip
+helper_cuda.h
+/home/jchen/cuda-port-agent/hip/helper_cuda.h
+math.h
+-
+GLUT/glut.h
+-
+GL/freeglut.h
+-
+hip/hip_cooperative_groups.h
+-
+hip/hip_runtime.h
+-
+bodysystem.h
+/home/jchen/cuda-port-agent/hip/bodysystem.h
+
+/home/jchen/cuda-port-agent/hip/helper_cuda.h
+hip/hip_runtime.h
+-
+cstdio
+-
+cstdlib
+-
+cstring
+-
+

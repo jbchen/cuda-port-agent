@@ -1,0 +1,3 @@
+/home/jchen/cuda-port-agent/hip/build/CMakeFiles/smokeParticles.dir
+/home/jchen/cuda-port-agent/hip/build/CMakeFiles/edit_cache.dir
+/home/jchen/cuda-port-agent/hip/build/CMakeFiles/rebuild_cache.dir

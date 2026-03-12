@@ -1,0 +1,173 @@
+[ 11%] Building HIP object CMakeFiles/smokeParticles.dir/ParticleSystem_cuda.hip.o
+[ 22%] Building CXX object CMakeFiles/smokeParticles.dir/ParticleSystem.cpp.o
+[ 33%] Building CXX object CMakeFiles/smokeParticles.dir/particleDemo.cpp.o
+[ 44%] Linking HIP executable smokeParticles
+ld.lld: error: undefined symbol: glGetString
+>>> referenced by framebufferObject.cpp
+>>>               CMakeFiles/smokeParticles.dir/framebufferObject.cpp.o:(__HelperGL::__Int::getGLExtensions())
+>>> referenced by SmokeRenderer.cpp
+>>>               CMakeFiles/smokeParticles.dir/SmokeRenderer.cpp.o:(__HelperGL::__Int::getGLExtensions())
+>>> referenced by framebufferObject.cpp
+>>>               CMakeFiles/smokeParticles.dir/framebufferObject.cpp.o:(__HelperGL::isGLVersionSupported(unsigned int, unsigned int))
+>>> referenced 9 more times
+
+ld.lld: error: undefined symbol: glGetIntegerv
+>>> referenced by framebufferObject.cpp
+>>>               CMakeFiles/smokeParticles.dir/framebufferObject.cpp.o:(FramebufferObject::GetMaxColorAttachments())
+>>> referenced by framebufferObject.cpp
+>>>               CMakeFiles/smokeParticles.dir/framebufferObject.cpp.o:(FramebufferObject::_GuardedBind())
+>>> referenced by renderbuffer.cpp
+>>>               CMakeFiles/smokeParticles.dir/renderbuffer.cpp.o:(Renderbuffer::Set(unsigned int, int, int))
+>>> referenced 1 more times
+
+ld.lld: error: undefined symbol: glutReportErrors
+>>> referenced by SmokeRenderer.cpp
+>>>               CMakeFiles/smokeParticles.dir/SmokeRenderer.cpp.o:(SmokeRenderer::SmokeRenderer(int))
+>>> referenced by particleDemo.cpp
+>>>               CMakeFiles/smokeParticles.dir/particleDemo.cpp.o:(display())
+>>> referenced by SmokeRenderer.cpp
+>>>               CMakeFiles/smokeParticles.dir/SmokeRenderer.cpp.o:(SmokeRenderer::render())
+>>> referenced 1 more times
+
+ld.lld: error: undefined symbol: glDeleteTextures
+>>> referenced by particleDemo.cpp
+>>>               CMakeFiles/smokeParticles.dir/particleDemo.cpp.o:(cleanup())
+>>> referenced by SmokeRenderer.cpp
+>>>               CMakeFiles/smokeParticles.dir/SmokeRenderer.cpp.o:(SmokeRenderer::~SmokeRenderer())
+>>> referenced by SmokeRenderer.cpp
+>>>               CMakeFiles/smokeParticles.dir/SmokeRenderer.cpp.o:(SmokeRenderer::~SmokeRenderer())
+>>> referenced 4 more times
+
+ld.lld: error: undefined symbol: glEnable
+>>> referenced by particleDemo.cpp
+>>>               CMakeFiles/smokeParticles.dir/particleDemo.cpp.o:(renderScene())
+>>> referenced by SmokeRenderer.cpp
+>>>               CMakeFiles/smokeParticles.dir/SmokeRenderer.cpp.o:(SmokeRenderer::drawPointSprites(GLSLProgram*, int, int, bool))
+>>> referenced by SmokeRenderer.cpp
+>>>               CMakeFiles/smokeParticles.dir/SmokeRenderer.cpp.o:(SmokeRenderer::drawPointSprites(GLSLProgram*, int, int, bool))
+>>> referenced 4 more times
+
+ld.lld: error: undefined symbol: glDepthMask
+>>> referenced by particleDemo.cpp
+>>>               CMakeFiles/smokeParticles.dir/particleDemo.cpp.o:(renderScene())
+>>> referenced by SmokeRenderer.cpp
+>>>               CMakeFiles/smokeParticles.dir/SmokeRenderer.cpp.o:(SmokeRenderer::drawPointSprites(GLSLProgram*, int, int, bool))
+>>> referenced by SmokeRenderer.cpp
+>>>               CMakeFiles/smokeParticles.dir/SmokeRenderer.cpp.o:(SmokeRenderer::drawPointSprites(GLSLProgram*, int, int, bool))
+>>> referenced 1 more times
+
+ld.lld: error: undefined symbol: glVertexPointer
+>>> referenced by SmokeRenderer.cpp
+>>>               CMakeFiles/smokeParticles.dir/SmokeRenderer.cpp.o:(SmokeRenderer::drawPoints(int, int, bool))
+
+ld.lld: error: undefined symbol: glEnableClientState
+>>> referenced by SmokeRenderer.cpp
+>>>               CMakeFiles/smokeParticles.dir/SmokeRenderer.cpp.o:(SmokeRenderer::drawPoints(int, int, bool))
+>>> referenced by SmokeRenderer.cpp
+>>>               CMakeFiles/smokeParticles.dir/SmokeRenderer.cpp.o:(SmokeRenderer::drawPoints(int, int, bool))
+>>> referenced by SmokeRenderer.cpp
+>>>               CMakeFiles/smokeParticles.dir/SmokeRenderer.cpp.o:(SmokeRenderer::drawPoints(int, int, bool))
+
+ld.lld: error: undefined symbol: glActiveTexture
+>>> referenced by particleDemo.cpp
+>>>               CMakeFiles/smokeParticles.dir/particleDemo.cpp.o:(renderScene())
+>>> referenced by GLSLProgram.cpp
+>>>               CMakeFiles/smokeParticles.dir/GLSLProgram.cpp.o:(GLSLProgram::bindTexture(char const*, unsigned int, unsigned int, int))
+>>> referenced by GLSLProgram.cpp
+>>>               CMakeFiles/smokeParticles.dir/GLSLProgram.cpp.o:(GLSLProgram::bindTexture(char const*, unsigned int, unsigned int, int))
+>>> referenced 2 more times
+
+ld.lld: error: undefined symbol: glMatrixMode
+>>> referenced by particleDemo.cpp
+>>>               CMakeFiles/smokeParticles.dir/particleDemo.cpp.o:(renderScene())
+>>> referenced by particleDemo.cpp
+>>>               CMakeFiles/smokeParticles.dir/particleDemo.cpp.o:(renderScene())
+>>> referenced by particleDemo.cpp
+>>>               CMakeFiles/smokeParticles.dir/particleDemo.cpp.o:(renderScene())
+>>> referenced 22 more times
+
+ld.lld: error: undefined symbol: glLoadMatrixf
+>>> referenced by particleDemo.cpp
+>>>               CMakeFiles/smokeParticles.dir/particleDemo.cpp.o:(renderScene())
+>>> referenced by SmokeRenderer.cpp
+>>>               CMakeFiles/smokeParticles.dir/SmokeRenderer.cpp.o:(SmokeRenderer::drawSliceLightView(int))
+>>> referenced by SmokeRenderer.cpp
+>>>               CMakeFiles/smokeParticles.dir/SmokeRenderer.cpp.o:(SmokeRenderer::drawSliceLightView(int))
+>>> referenced 3 more times
+
+ld.lld: error: undefined symbol: glColor3f
+>>> referenced by particleDemo.cpp
+>>>               CMakeFiles/smokeParticles.dir/particleDemo.cpp.o:(renderScene())
+>>> referenced by SmokeRenderer.cpp
+>>>               CMakeFiles/smokeParticles.dir/SmokeRenderer.cpp.o:(SmokeRenderer::render())
+>>> referenced by SmokeRenderer.cpp
+>>>               CMakeFiles/smokeParticles.dir/SmokeRenderer.cpp.o:(SmokeRenderer::debugVectors())
+>>> referenced 4 more times
+
+ld.lld: error: undefined symbol: glColorPointer
+>>> referenced by SmokeRenderer.cpp
+>>>               CMakeFiles/smokeParticles.dir/SmokeRenderer.cpp.o:(SmokeRenderer::drawPoints(int, int, bool))
+
+ld.lld: error: undefined symbol: glNormal3f
+>>> referenced by particleDemo.cpp
+>>>               CMakeFiles/smokeParticles.dir/particleDemo.cpp.o:(renderScene())
+
+ld.lld: error: undefined symbol: glBegin
+>>> referenced by particleDemo.cpp
+>>>               CMakeFiles/smokeParticles.dir/particleDemo.cpp.o:(renderScene())
+>>> referenced by SmokeRenderer.cpp
+>>>               CMakeFiles/smokeParticles.dir/SmokeRenderer.cpp.o:(SmokeRenderer::drawQuad())
+>>> referenced by SmokeRenderer.cpp
+>>>               CMakeFiles/smokeParticles.dir/SmokeRenderer.cpp.o:(SmokeRenderer::drawVector(nv::vec3<float>))
+>>> referenced 1 more times
+
+ld.lld: error: undefined symbol: glTexCoord2f
+>>> referenced by particleDemo.cpp
+>>>               CMakeFiles/smokeParticles.dir/particleDemo.cpp.o:(renderScene())
+>>> referenced by particleDemo.cpp
+>>>               CMakeFiles/smokeParticles.dir/particleDemo.cpp.o:(renderScene())
+>>> referenced by particleDemo.cpp
+>>>               CMakeFiles/smokeParticles.dir/particleDemo.cpp.o:(renderScene())
+>>> referenced 5 more times
+
+ld.lld: error: undefined symbol: glVertex3f
+>>> referenced by particleDemo.cpp
+>>>               CMakeFiles/smokeParticles.dir/particleDemo.cpp.o:(renderScene())
+>>> referenced by particleDemo.cpp
+>>>               CMakeFiles/smokeParticles.dir/particleDemo.cpp.o:(renderScene())
+>>> referenced by particleDemo.cpp
+>>>               CMakeFiles/smokeParticles.dir/particleDemo.cpp.o:(renderScene())
+>>> referenced 2 more times
+
+ld.lld: error: undefined symbol: glEnd
+>>> referenced by particleDemo.cpp
+>>>               CMakeFiles/smokeParticles.dir/particleDemo.cpp.o:(renderScene())
+>>> referenced by SmokeRenderer.cpp
+>>>               CMakeFiles/smokeParticles.dir/SmokeRenderer.cpp.o:(SmokeRenderer::drawQuad())
+>>> referenced by SmokeRenderer.cpp
+>>>               CMakeFiles/smokeParticles.dir/SmokeRenderer.cpp.o:(SmokeRenderer::drawVector(nv::vec3<float>))
+>>> referenced 1 more times
+
+ld.lld: error: undefined symbol: glLoadIdentity
+>>> referenced by particleDemo.cpp
+>>>               CMakeFiles/smokeParticles.dir/particleDemo.cpp.o:(renderScene())
+>>> referenced by particleDemo.cpp
+>>>               CMakeFiles/smokeParticles.dir/particleDemo.cpp.o:(display())
+>>> referenced by SmokeRenderer.cpp
+>>>               CMakeFiles/smokeParticles.dir/SmokeRenderer.cpp.o:(SmokeRenderer::calcVectors())
+>>> referenced 5 more times
+
+ld.lld: error: undefined symbol: glPushMatrix
+>>> referenced by particleDemo.cpp
+>>>               CMakeFiles/smokeParticles.dir/particleDemo.cpp.o:(renderScene())
+>>> referenced by SmokeRenderer.cpp
+>>>               CMakeFiles/smokeParticles.dir/SmokeRenderer.cpp.o:(SmokeRenderer::calcVectors())
+>>> referenced by SmokeRenderer.cpp
+>>>               CMakeFiles/smokeParticles.dir/SmokeRenderer.cpp.o:(SmokeRenderer::calcVectors())
+>>> referenced 6 more times
+
+ld.lld: error: too many errors emitted, stopping now (use --error-limit=0 to see all errors)
+clang++: error: linker command failed with exit code 1 (use -v to see invocation)
+make[2]: *** [CMakeFiles/smokeParticles.dir/build.make:213: smokeParticles] Error 1
+make[1]: *** [CMakeFiles/Makefile2:87: CMakeFiles/smokeParticles.dir/all] Error 2
+make: *** [Makefile:91: all] Error 2

@@ -1,0 +1,99 @@
+[ 25%] Building HIP object CMakeFiles/nbody_hip.dir/bodysystemcuda.hip.o
+[ 25%] Built target nbody_hip
+[ 50%] Building CXX object CMakeFiles/nbody.dir/nbody.cpp.o
+/home/jchen/cuda-port-agent/hip/nbody.cpp: In function ‘int main(int, char**)’:
+/home/jchen/cuda-port-agent/hip/nbody.cpp:1078:22: warning: ignoring returned value of type ‘hipError_t’, declared with attribute nodiscard [-Wunused-result]
+     hipGetDeviceCount(&numDevsAvailable);
+     ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+In file included from /opt/rocm-7.1.1/include/hip/hip_runtime.h:65,
+                 from /home/jchen/cuda-port-agent/hip/nbody.cpp:46:
+/opt/rocm-7.1.1/include/hip/hip_runtime_api.h:2258:12: note: in call to ‘hipError_t hipGetDeviceCount(int*)’, declared here
+ hipError_t hipGetDeviceCount(int* count);
+            ^~~~~~~~~~~~~~~~~
+In file included from /opt/rocm-7.1.1/include/hip/hip_runtime.h:65,
+                 from /home/jchen/cuda-port-agent/hip/nbody.cpp:46:
+/opt/rocm-7.1.1/include/hip/hip_runtime_api.h:419:3: note: ‘hipError_t’ declared here
+ } hipError_t;
+   ^~~~~~~~~~
+In file included from /home/jchen/cuda-port-agent/hip/bodysystemcuda.h:105,
+                 from /home/jchen/cuda-port-agent/hip/nbody.cpp:56:
+/home/jchen/cuda-port-agent/hip/bodysystemcuda_impl.h: In instantiation of ‘void BodySystemCUDA<T>::_finalize() [with T = float]’:
+/home/jchen/cuda-port-agent/hip/bodysystemcuda_impl.h:87:5:   required from ‘BodySystemCUDA<T>::~BodySystemCUDA() [with T = float]’
+/home/jchen/cuda-port-agent/hip/nbody.cpp:300:13:   required from ‘NBodyDemo<T>::~NBodyDemo() [with T = float]’
+/home/jchen/cuda-port-agent/hip/nbody.cpp:178:29:   required from ‘static void NBodyDemo<T>::Destroy() [with T = float]’
+/home/jchen/cuda-port-agent/hip/nbody.cpp:507:23:   required from here
+/home/jchen/cuda-port-agent/hip/bodysystemcuda_impl.h:248:28: warning: ignoring returned value of type ‘hipError_t’, declared with attribute nodiscard [-Wunused-result]
+             hipEventDestroy(m_deviceData[i].event);
+             ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+In file included from /opt/rocm-7.1.1/include/hip/hip_runtime.h:65,
+                 from /home/jchen/cuda-port-agent/hip/nbody.cpp:46:
+/opt/rocm-7.1.1/include/hip/hip_runtime_api.h:3433:12: note: in call to ‘hipError_t hipEventDestroy(hipEvent_t)’, declared here
+ hipError_t hipEventDestroy(hipEvent_t event);
+            ^~~~~~~~~~~~~~~
+In file included from /opt/rocm-7.1.1/include/hip/hip_runtime.h:65,
+                 from /home/jchen/cuda-port-agent/hip/nbody.cpp:46:
+/opt/rocm-7.1.1/include/hip/hip_runtime_api.h:419:3: note: ‘hipError_t’ declared here
+ } hipError_t;
+   ^~~~~~~~~~
+In file included from /home/jchen/cuda-port-agent/hip/bodysystemcuda.h:105,
+                 from /home/jchen/cuda-port-agent/hip/nbody.cpp:56:
+/home/jchen/cuda-port-agent/hip/bodysystemcuda_impl.h: In instantiation of ‘void BodySystemCUDA<T>::_finalize() [with T = double]’:
+/home/jchen/cuda-port-agent/hip/bodysystemcuda_impl.h:87:5:   required from ‘BodySystemCUDA<T>::~BodySystemCUDA() [with T = double]’
+/home/jchen/cuda-port-agent/hip/nbody.cpp:300:13:   required from ‘NBodyDemo<T>::~NBodyDemo() [with T = double]’
+/home/jchen/cuda-port-agent/hip/nbody.cpp:178:29:   required from ‘static void NBodyDemo<T>::Destroy() [with T = double]’
+/home/jchen/cuda-port-agent/hip/nbody.cpp:510:28:   required from here
+/home/jchen/cuda-port-agent/hip/bodysystemcuda_impl.h:248:28: warning: ignoring returned value of type ‘hipError_t’, declared with attribute nodiscard [-Wunused-result]
+             hipEventDestroy(m_deviceData[i].event);
+             ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+In file included from /opt/rocm-7.1.1/include/hip/hip_runtime.h:65,
+                 from /home/jchen/cuda-port-agent/hip/nbody.cpp:46:
+/opt/rocm-7.1.1/include/hip/hip_runtime_api.h:3433:12: note: in call to ‘hipError_t hipEventDestroy(hipEvent_t)’, declared here
+ hipError_t hipEventDestroy(hipEvent_t event);
+            ^~~~~~~~~~~~~~~
+In file included from /opt/rocm-7.1.1/include/hip/hip_runtime.h:65,
+                 from /home/jchen/cuda-port-agent/hip/nbody.cpp:46:
+/opt/rocm-7.1.1/include/hip/hip_runtime_api.h:419:3: note: ‘hipError_t’ declared here
+ } hipError_t;
+   ^~~~~~~~~~
+In file included from /home/jchen/cuda-port-agent/hip/bodysystemcuda.h:105,
+                 from /home/jchen/cuda-port-agent/hip/nbody.cpp:56:
+/home/jchen/cuda-port-agent/hip/bodysystemcuda_impl.h: In instantiation of ‘void BodySystemCUDA<T>::_initialize(int) [with T = float]’:
+/home/jchen/cuda-port-agent/hip/bodysystemcuda_impl.h:80:5:   required from ‘BodySystemCUDA<T>::BodySystemCUDA(unsigned int, unsigned int, unsigned int, bool, bool, bool, int) [with T = float]’
+/home/jchen/cuda-port-agent/hip/nbody.cpp:338:27:   required from ‘void NBodyDemo<T>::_init(int, int, int, bool, bool, bool, bool, int) [with T = float]’
+/home/jchen/cuda-port-agent/hip/nbody.cpp:189:22:   required from ‘static void NBodyDemo<T>::init(int, int, int, bool, bool, bool, bool, int) [with T = float]’
+/home/jchen/cuda-port-agent/hip/nbody.cpp:1310:23:   required from here
+/home/jchen/cuda-port-agent/hip/bodysystemcuda_impl.h:222:36: warning: ignoring returned value of type ‘hipError_t’, declared with attribute nodiscard [-Wunused-result]
+                     hipGetLastError();
+                     ~~~~~~~~~~~~~~~^~
+In file included from /opt/rocm-7.1.1/include/hip/hip_runtime.h:65,
+                 from /home/jchen/cuda-port-agent/hip/nbody.cpp:46:
+/opt/rocm-7.1.1/include/hip/hip_runtime_api.h:2693:12: note: in call to ‘hipError_t hipGetLastError()’, declared here
+ hipError_t hipGetLastError(void);
+            ^~~~~~~~~~~~~~~
+In file included from /opt/rocm-7.1.1/include/hip/hip_runtime.h:65,
+                 from /home/jchen/cuda-port-agent/hip/nbody.cpp:46:
+/opt/rocm-7.1.1/include/hip/hip_runtime_api.h:419:3: note: ‘hipError_t’ declared here
+ } hipError_t;
+   ^~~~~~~~~~
+In file included from /home/jchen/cuda-port-agent/hip/bodysystemcuda.h:105,
+                 from /home/jchen/cuda-port-agent/hip/nbody.cpp:56:
+/home/jchen/cuda-port-agent/hip/bodysystemcuda_impl.h: In instantiation of ‘void BodySystemCUDA<T>::_initialize(int) [with T = double]’:
+/home/jchen/cuda-port-agent/hip/bodysystemcuda_impl.h:80:5:   required from ‘BodySystemCUDA<T>::BodySystemCUDA(unsigned int, unsigned int, unsigned int, bool, bool, bool, int) [with T = double]’
+/home/jchen/cuda-port-agent/hip/nbody.cpp:338:27:   required from ‘void NBodyDemo<T>::_init(int, int, int, bool, bool, bool, bool, int) [with T = double]’
+/home/jchen/cuda-port-agent/hip/nbody.cpp:189:22:   required from ‘static void NBodyDemo<T>::init(int, int, int, bool, bool, bool, bool, int) [with T = double]’
+/home/jchen/cuda-port-agent/hip/nbody.cpp:1322:28:   required from here
+/home/jchen/cuda-port-agent/hip/bodysystemcuda_impl.h:222:36: warning: ignoring returned value of type ‘hipError_t’, declared with attribute nodiscard [-Wunused-result]
+                     hipGetLastError();
+                     ~~~~~~~~~~~~~~~^~
+In file included from /opt/rocm-7.1.1/include/hip/hip_runtime.h:65,
+                 from /home/jchen/cuda-port-agent/hip/nbody.cpp:46:
+/opt/rocm-7.1.1/include/hip/hip_runtime_api.h:2693:12: note: in call to ‘hipError_t hipGetLastError()’, declared here
+ hipError_t hipGetLastError(void);
+            ^~~~~~~~~~~~~~~
+In file included from /opt/rocm-7.1.1/include/hip/hip_runtime.h:65,
+                 from /home/jchen/cuda-port-agent/hip/nbody.cpp:46:
+/opt/rocm-7.1.1/include/hip/hip_runtime_api.h:419:3: note: ‘hipError_t’ declared here
+ } hipError_t;
+   ^~~~~~~~~~
+[ 75%] Linking HIP executable nbody
+[100%] Built target nbody

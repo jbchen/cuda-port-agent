@@ -1,0 +1,1 @@
+/opt/rocm-7.1.1/lib/llvm/bin/clang++  --offload-arch=gfx90a --hip-link --rtlib=compiler-rt -unwindlib=libgcc CMakeFiles/nbody.dir/render_particles.cpp.o CMakeFiles/nbody.dir/nbody.cpp.o CMakeFiles/nbody_hip.dir/bodysystemcuda.hip.o -o nbody  /opt/rocm-7.1.1/lib/libamdhip64.so.7.1.70101 /opt/rocm-7.1.1/lib/libamdhip64.so.7.1.70101 -lgcc -lgcc
