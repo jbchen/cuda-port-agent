@@ -11,7 +11,6 @@ It was created with claude code and tested with 2 sample applications from CUDA 
 
 Please see more details in ./CLAUDE.md.
 
-
 ## Porting Steps
 
 To use it with claude code, following the steps:
